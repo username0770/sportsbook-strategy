@@ -3,183 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Стратегія БК 2.0 | Богдан Чуднівець</title>
+    <title>Bohdan Chudnivets | Sportsbook Strategy 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f1f5f9; scroll-behavior: smooth; }
-        .gradient-bg { background: radial-gradient(circle at top right, #1e3a8a, transparent), radial-gradient(circle at bottom left, #1e1b4b, transparent); }
-        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
-        .glass:hover { border-color: #3b82f6; transform: translateY(-4px); }
-        .accent-gradient { background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-glow { position: absolute; width: 40vw; height: 40vw; background: #3b82f6; filter: blur(150px); opacity: 0.15; z-index: -1; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        :root {
+            --bg-dark: #020617;
+            --card-dark: #0f172a;
+            --accent-blue: #38bdf8;
+            --accent-purple: #818cf8;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #f1f5f9; 
+            scroll-behavior: smooth; 
+        }
+
+        .gradient-text { 
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .glass-card { 
+            background: rgba(15, 23, 42, 0.8); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover { 
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .section-divider {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+            z-index: -1;
+        }
     </style>
 </head>
-<body class="gradient-bg min-h-screen">
+<body class="selection:bg-blue-500/30">
 
-    <section class="relative min-h-screen flex flex-col justify-center items-center px-6 text-center overflow-hidden">
-        <div class="hero-glow top-[-10%] left-[-10%]"></div>
-        <div class="hero-glow bottom-[-10%] right-[-10%]"></div>
+    <header class="relative min-h-screen flex flex-col justify-center items-center px-6 text-center overflow-hidden">
+        <div class="hero-glow top-[-200px] left-[-200px]"></div>
+        <div class="hero-glow bottom-[-200px] right-[-200px]"></div>
         
-        <div class="mb-4 px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-sm font-medium bg-blue-500/10">
-            Strategic Proposal 2026
-        </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tighter">
-            Трансформація БК: <br><span class="accent-gradient">Соціалізація та Гейміфікація</span>
+        <div class="mb-6 tracking-[0.3em] text-blue-500 text-xs font-bold uppercase">Strategy & Innovation</div>
+        <h1 class="text-5xl md:text-8xl font-extrabold mb-8 tracking-tighter text-white">
+            Sportsbook <span class="gradient-text">2.0</span>
         </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mb-12">
-            Створення екосистеми, де клієнт отримує емоції та соціальні зв'язки за межами класичного беттінгу.
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-12 font-light leading-relaxed">
+            Стратегічне розширення функціоналу: соціальні елементи, гейміфікація та екосистема активного утримання.
         </p>
-        <div class="flex flex-col items-center">
-            <span class="text-slate-200 font-semibold text-lg">Богдан Чуднівець</span>
-            <span class="text-slate-500">Head of the Cybersports Department</span>
+        
+        <div class="border-l border-blue-500 pl-4 text-left">
+            <div class="text-white font-semibold">Богдан Чуднівець</div>
+            <div class="text-slate-500 text-sm">Head of the Cybersports Department (Favbet)</div>
         </div>
-        <a href="#vision" class="mt-12 animate-bounce cursor-pointer">
-            <i data-lucide="chevron-down" class="text-slate-500"></i>
-        </a>
+    </header>
+
+    <section class="py-32 px-6 max-w-6xl mx-auto section-divider">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-white italic">Візія продукту: <br>Від "Ставок" до "Ком'юніті"</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed">Мета — створення розважально-ігрового простору, де цінність платформи зростає з кожним новим учасником.</p>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="text-blue-500"><i data-lucide="zap"></i></div>
+                        <div><b class="text-slate-200">Залучення:</b> Мережевий ефект та сарафанний маркетинг.</div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="text-indigo-500"><i data-lucide="shield-check"></i></div>
+                        <div><b class="text-slate-200">Утримання:</b> Внутрішня система прогресу та винагород.</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-12 rounded-2xl border-l-4 border-l-blue-500">
+                <div class="text-4xl font-bold text-white mb-2">360°</div>
+                <div class="text-slate-500 uppercase text-xs tracking-widest font-bold">Ecosystem Approach</div>
+            </div>
+        </div>
     </section>
 
-    <section id="vision" class="py-24 px-6 max-w-6xl mx-auto">
+    <section class="py-32 px-6 max-w-6xl mx-auto section-divider">
+        <h2 class="text-2xl font-bold mb-12 uppercase tracking-widest text-blue-500 text-center">Community Building & MVP</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="glass-card p-8 rounded-xl">
+                <h3 class="text-xl font-bold mb-4 text-white">Social Hub</h3>
+                <p class="text-sm text-slate-500 mb-6 italic">Перенесення досвіду "касового" спілкування в цифру.</p>
+                <ul class="space-y-4 text-sm">
+                    <li>• Тематичні чати за видами спорту</li>
+                    <li>• Фан-кімнати клубів (Barcelona, NaVi)</li>
+                    <li>• Стіна активності та стрічка прогнозів</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-xl bg-blue-500/5">
+                <h3 class="text-xl font-bold mb-4 text-white">MVP Функціонал</h3>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex justify-between border-b border-white/5 pb-2"><span>Публічні профілі (ROI, статистика)</span><i data-lucide="check" class="w-4 h-4 text-blue-500"></i></li>
+                    <li class="flex justify-between border-b border-white/5 pb-2"><span>Copy Bet (Копіювання в 1 клік)</span><i data-lucide="check" class="w-4 h-4 text-blue-500"></i></li>
+                    <li class="flex justify-between border-b border-white/5 pb-2"><span>Follow System (Підписки)</span><i data-lucide="check" class="w-4 h-4 text-blue-500"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 max-w-6xl mx-auto section-divider">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4 italic">Від "Ставок" до "Ком'юніті"</h2>
-            <p class="text-slate-400">Створення розважально-ігрового простору для утримання клієнтів</p>
+            <h2 class="text-3xl font-bold mb-4 text-white uppercase italic">RPG-модель Акаунта</h2>
+            <p class="text-slate-500">Розвиток персонажа як головний драйвер залучення</p>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass p-8 rounded-3xl">
-                <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400">
-                    <i data-lucide="user-plus"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Залучення</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Через мережевий ефект та сарафанний маркетинг серед активних гравців.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-2xl border-b-2 border-b-indigo-500">
+                <h4 class="font-bold text-white mb-4">Levels & XP</h4>
+                <p class="text-xs text-slate-500">Шлях від "Новачка" до "Легенди" за активність та перемоги.</p>
             </div>
-            <div class="glass p-8 rounded-3xl">
-                <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-purple-400">
-                    <i data-lucide="gift"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Утримання</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Завдяки внутрішній системі винагород та прогресу персонажа.</p>
+            <div class="glass-card p-8 rounded-2xl border-b-2 border-b-purple-500">
+                <h4 class="font-bold text-white mb-4">Achievements</h4>
+                <p class="text-xs text-slate-500">Колекційні медалі за турніри та тривалість гри.</p>
             </div>
-            <div class="glass p-8 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 text-emerald-400">
-                    <i data-lucide="network"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Мережа</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Екосистема, де цінність зростає з кожним новим учасником.</p>
+            <div class="glass-card p-8 rounded-2xl border-b-2 border-b-blue-500">
+                <h4 class="font-bold text-white mb-4">Battle Pass</h4>
+                <p class="text-xs text-slate-500">Сезонна система квестів та щоденних місій.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-slate-900/40">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 italic">Social Hub & MVP</h2>
-                    <p class="text-slate-400 mb-8 italic text-lg">Перенесення досвіду "касового" спілкування в цифру.</p>
-                    <div class="space-y-4">
-                        <div class="flex gap-4 p-4 glass rounded-2xl">
-                            <i data-lucide="message-square" class="text-blue-400 shrink-0"></i>
-                            <div><p class="font-semibold">Тематичні чати & Фан-кімнати</p><p class="text-sm text-slate-500">Обговорення подій навколо клубів (Barcelona, NaVi).</p></div>
-                        </div>
-                        <div class="flex gap-4 p-4 glass rounded-2xl">
-                            <i data-lucide="users" class="text-blue-400 shrink-0"></i>
-                            <div><p class="font-semibold">Публічні профілі</p><p class="text-sm text-slate-500">Аватар, статистика ROI та % виграшів для довіри.</p></div>
-                        </div>
-                        <div class="flex gap-4 p-4 glass rounded-2xl">
-                            <i data-lucide="copy" class="text-blue-400 shrink-0"></i>
-                            <div><p class="font-semibold">Copy Bet & Follow</p><p class="text-sm text-slate-500">Копіювання чужої ставки в один клік.</p></div>
-                        </div>
+    <section class="py-32 bg-slate-900/20 section-divider">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-8 text-white"><span class="text-blue-500">07</span> Retention & Loyalty</h3>
+                <div class="space-y-4">
+                    <div class="glass-card p-4 rounded-lg flex items-center gap-4">
+                        <i data-lucide="refresh-ccw" class="text-blue-500"></i>
+                        <span>Колесо фортуни та розіграші</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-lg flex items-center gap-4">
+                        <i data-lucide="wallet" class="text-blue-500"></i>
+                        <span>Бонуси за утримання балансу</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-lg flex items-center gap-4">
+                        <i data-lucide="calendar" class="text-blue-500"></i>
+                        <span>Календар щоденних подарунків</span>
                     </div>
                 </div>
-                <div class="md:w-1/2 relative">
-                    <div class="w-full aspect-square glass rounded-full flex items-center justify-center border-dashed border-2 border-slate-700">
-                         <div class="text-center">
-                            <i data-lucide="share-2" class="w-16 h-16 text-blue-500/20 mx-auto mb-4"></i>
-                            <span class="text-slate-500 uppercase tracking-widest text-xs font-bold">Social Network Effect</span>
-                         </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-8 text-white"><span class="text-indigo-500">08</span> Media Focus</h3>
+                <div class="space-y-4">
+                    <div class="glass-card p-4 rounded-lg flex items-center gap-4">
+                        <i data-lucide="tv" class="text-indigo-500"></i>
+                        <span>Watch & Bet (Стріми в купоні)</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-lg flex items-center gap-4">
+                        <i data-lucide="mic-2" class="text-indigo-500"></i>
+                        <span>Live-шоу з амбасадорами</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-lg flex items-center gap-4">
+                        <i data-lucide="trophy" class="text-indigo-500"></i>
+                        <span>Турніри прогнозів на виживання</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4 tracking-tight italic">RPG-модель Акаунта</h2>
-            <p class="text-slate-400">Гравець не просто ставить — він розвиває свого "Героя"</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="glass p-6 rounded-2xl text-center">
-                <i data-lucide="trending-up" class="mx-auto mb-4 text-purple-400"></i>
-                <h4 class="font-bold mb-2">Рівні & Статуси</h4>
-                <p class="text-xs text-slate-500">Шлях від "Новачка" до "Легенди"</p>
+    <section class="py-32 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 text-white italic">Network Effect</h3>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li>• Реферальні моделі за активність друзів</li>
+                    <li>• Командні клуби для спільних місій</li>
+                    <li>• Експертні підписки (напр. Віктор Вацко)</li>
+                </ul>
             </div>
-            <div class="glass p-6 rounded-2xl text-center">
-                <i data-lucide="award" class="mx-auto mb-4 text-purple-400"></i>
-                <h4 class="font-bold mb-2">Achievements</h4>
-                <p class="text-xs text-slate-500">Медалі за активність та турніри</p>
-            </div>
-            <div class="glass p-6 rounded-2xl text-center">
-                <i data-lucide="list-checks" class="mx-auto mb-4 text-purple-400"></i>
-                <h4 class="font-bold mb-2">Щоденні місії</h4>
-                <p class="text-xs text-slate-500">Квести на лояльність та гру</p>
-            </div>
-            <div class="glass p-6 rounded-2xl text-center">
-                <i data-lucide="zap" class="mx-auto mb-4 text-purple-400"></i>
-                <h4 class="font-bold mb-2">Battle Pass</h4>
-                <p class="text-xs text-slate-500">Сезонні нагороди та скіни</p>
+            <div class="glass-card p-10 rounded-3xl bg-gradient-to-br from-blue-900/20 to-transparent">
+                <h3 class="text-xl font-bold mb-6 text-white italic">The Future: VR & Metaverse</h3>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li>• VR-бари для спільного перегляду</li>
+                    <li>• 3D-лобі з трофеями та XP-статусом</li>
+                    <li>• Мета-всесвіт як фінальна точка соціалізації</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-blue-900/10">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="glass p-10 rounded-3xl bg-blue-600/5">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                        <i data-lucide="refresh-cw" class="text-blue-400"></i> Retention Focus
-                    </h3>
-                    <ul class="space-y-4 text-slate-400">
-                        <li>• <b>Колесо фортуни:</b> Розіграші фрібетів.</li>
-                        <li>• <b>Стимул балансу:</b> Фрібети за не виведення коштів.</li>
-                        <li>• <b>Календар подарунків:</b> Щоденні призи за логін.</li>
-                    </ul>
-                </div>
-                <div class="glass p-10 rounded-3xl bg-purple-600/5">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                        <i data-lucide="play" class="text-purple-400"></i> Media & Entertainment
-                    </h3>
-                    <ul class="space-y-4 text-slate-400">
-                        <li>• <b>Live-шоу:</b> Чат з амбасадорами.</li>
-                        <li>• <b>Watch & Bet:</b> Стріми прямо в купоні.</li>
-                        <li>• <b>Турніри прогнозів:</b> Змагання на виживання.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-32 px-6 text-center">
-        <h2 class="text-4xl font-bold mb-8 italic">Майбутнє: Metaverse & VR</h2>
-        <div class="max-w-4xl mx-auto glass p-12 rounded-[3rem] relative overflow-hidden">
-            <div class="absolute inset-0 bg-blue-500/5 animate-pulse"></div>
-            <div class="relative z-10 grid md:grid-cols-2 gap-12 text-left">
-                <div>
-                    <h4 class="font-bold text-xl mb-4 text-blue-400">VR-Sports Bars</h4>
-                    <p class="text-slate-400">Спільний перегляд матчів у віртуальному просторі через аватари гравців.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-xl mb-4 text-purple-400">3D Lobbies</h4>
-                    <p class="text-slate-400">Персоналізовані кімнати з віртуальними трофеями та стіною слави.</p>
-                </div>
-            </div>
-            <p class="mt-12 text-sm text-slate-500 uppercase tracking-widest font-bold">Organic Evolution of Socialization</p>
-        </div>
-    </section>
-
-    <footer class="py-12 border-t border-slate-800 text-center px-6">
-        <p class="text-slate-500 mb-2">Розроблено спеціально для <b>True Group</b></p>
-        <p class="text-xs text-slate-600">Built with HTML, Tailwind & JS | 2026 Strategy Proposal</p>
+    <footer class="py-16 border-t border-white/5 text-center">
+        <div class="text-slate-500 text-xs tracking-[0.4em] uppercase mb-4">Strategic Proposal</div>
+        <div class="text-white font-bold mb-2 uppercase">True Group x Bohdan Chudnivets</div>
+        <div class="text-slate-600 text-[10px]">2026 | Technical stack: Tailwind, Lucide, Pure JS</div>
     </footer>
 
     <script>
